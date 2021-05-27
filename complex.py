@@ -55,18 +55,18 @@ class MyCallback(dl.Callback):
     def on_stage_end(self, runner: "IRunner") -> None:
         if runner.stage_key == "train_unfrozen":
             runner.log_artifact(
-                path_to_artifact="./sac-rl.mp4", tag="video-stage-level", scope="stage"
+                path_to_artifact="./files/sac-rl.mp4", tag="video-stage-level", scope="stage"
             )
 
     def on_epoch_start(self, runner: "IRunner") -> None:
         runner.log_artifact(
-            path_to_artifact="./elephant.wav", tag="audio-epoch-level", scope="epoch"
+            path_to_artifact="./files/elephant.wav", tag="audio-epoch-level", scope="epoch"
         )
 
     def on_loader_end(self, runner: "IRunner") -> None:
         if runner.loader_key == "validation":
             runner.log_artifact(
-                path_to_artifact="./mean_action.gif", tag="gif-loader-level", scope="loader"
+                path_to_artifact="./files/mean_action.gif", tag="gif-loader-level", scope="loader"
             )
 
 
