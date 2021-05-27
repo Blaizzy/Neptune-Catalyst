@@ -102,7 +102,7 @@ Now you can explore results in Neptune UI.
 Just follow the link to complex persisted view:
 https://app.neptune.ai/o/common/org/example-project-catalyst/experiments?split=tbl&dash=leaderboard&viewId=b658dc92-b4c6-4a3f-bece-5191600a5c80
 	
-## Conlusion
+# Things to remember
 There you go, you learned how to:
 
  - connect Neptune to your catalyst experiment 
