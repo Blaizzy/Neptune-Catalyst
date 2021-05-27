@@ -69,7 +69,9 @@ my_runner.log_artifact(
 ```
 
 ### Step 4
-Let’s explore results in Neptune UI.
+Now you explore results in Neptune UI.
+
+Just follow the link to basic persisted view: https://app.neptune.ai/o/common/org/example-project-catalyst/experiments?split=tbl&dash=leaderboard&viewId=d8ced6bb-61c0-48a2-97e2-bf46fb6e4fdb
 
 ## [Complex example](https://github.com/Blaizzy/Neptune-Catalyst/blob/master/complex.py)
 Same steps as the basic example but here we do 2 things differently.
@@ -96,8 +98,11 @@ We customize our runner to showcase how to log metadata at different stages:
 
 
 
-Now, you can explore results in Neptune UI 
+Now you can explore results in Neptune UI.
+Just follow the link to complex persisted view:
+https://app.neptune.ai/o/common/org/example-project-catalyst/experiments?split=tbl&dash=leaderboard&viewId=b658dc92-b4c6-4a3f-bece-5191600a5c80
 	
+## Conlusion
 There you go, you learned how to:
 
  - connect Neptune to your catalyst experiment 
