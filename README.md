@@ -8,7 +8,7 @@ I have to examples to show you:
  - And a more robust and customized example-> complex.py
 
 
-## [Basic Example]()
+## [Basic Example](https://github.com/Blaizzy/Neptune-Catalyst/blob/master/basic.py)
 
 In this example we are going to log data at 3 levels:
   - Experiment 
@@ -27,7 +27,7 @@ Define your hparams, data loaders, model, loss function, optimizer
 
 ### Step 3 
 Define you runner and pass arguments to your train() method to setup up your training loop. 
-You just add neptune logger as one of the arguments and run your code.
+In order to add log data to Neptune UI you just add neptune logger as one of the arguments and run your code - that's it.
 ```python
 my_runner.train(
     model=model,
@@ -60,13 +60,18 @@ my_runner.train(
 
 One super exciting thing is that the new version of catalyst log_artifacts was introduced and our logger has support for it.
 
+```python
+my_runner.log_artifact(
+    path_to_artifact="./logs/checkpoints/best.pth",
+    tag="best_model",
+    scope="experiment"
+)
+```
+
 ### Step 4
 Let’s explore results in Neptune UI.
 
-Thanks to our hierarchical structure feature in our client library we can do a 1-to-1 mapping with your catalyst experiment
-
-
-## [Complex example]()
+## [Complex example](https://github.com/Blaizzy/Neptune-Catalyst/blob/master/complex.py)
 Same steps as the basic example but here we do 2 things differently.
 
 We create a callback that is going to help us log metadata at different levels of the runner:
