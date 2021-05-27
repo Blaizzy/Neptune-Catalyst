@@ -4,3 +4,4 @@ checkpoints/
 logs/
 MNIST/
 Neptune + Catalyst integration.mp4
+.DS_Store
