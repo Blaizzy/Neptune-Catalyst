@@ -1,7 +1,7 @@
 # Neptune-Catalyst
 
 
-In this repo you will learn how to save all you catalyst experiment metadata to Neptune at every level of your experiment.
+In this repo you will learn how to save all you catalyst experiment metadata to Neptune at every 'scope' of your experiment.
 
 I have to examples to show you:
  - A basic example -> basic.py
@@ -10,7 +10,7 @@ I have to examples to show you:
 
 ## [Basic Example](https://github.com/Blaizzy/Neptune-Catalyst/blob/master/basic.py)
 
-In this example we are going to log data at 3 levels:
+In this example we are going to log data at 3 scopes:
   - Experiment 
   - Loader 
   - Batch
@@ -76,19 +76,19 @@ Just follow the link to basic persisted view: https://app.neptune.ai/o/common/or
 ## [Complex example](https://github.com/Blaizzy/Neptune-Catalyst/blob/master/complex.py)
 Same steps as the basic example but here we do 2 things differently.
 
-We create a callback that is going to help us log metadata at different levels of the runner:
+We create a callback that is going to help us log metadata at different scopes of the runner:
 
-**experiment level**:
+**experiment scope**:
  - on end: log best model
 
-**stage level**:
+**stage scope**:
  - on start: if "train_frozen" stage, log sample images
  - on end: if "train_unfrozen" stage, log mp4 file
 
-**epoch level**:
+**epoch scope**:
  - on start: log audio file
 
-**loader level**:
+**loader scope**:
  - on end: log gif
 
 
