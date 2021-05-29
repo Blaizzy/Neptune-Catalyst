@@ -1,5 +1,6 @@
 # Neptune-Catalyst
 
+Docs: https://docs.neptune.ai/integrations-and-supported-tools/model-training/catalyst
 
 In this repo you will learn how to save all you catalyst experiment metadata to Neptune at every 'scope' of your experiment.
 
